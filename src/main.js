@@ -27,5 +27,8 @@ new Vue({
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    //load the meetups from the firebase
+    this.$store.dispatch('loadMeetups');
   }
 }).$mount('#app')
